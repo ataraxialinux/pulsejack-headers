@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+modlibexecdir=/usr/lib/pulse-13.99/modules
+
+Name: libpulse
+Description: PulseAudio Client Interface
+Version: 13.99.3
+Libs: -L${libdir} -lpulse -pthread
+Cflags: -I${includedir} -D_REENTRANT

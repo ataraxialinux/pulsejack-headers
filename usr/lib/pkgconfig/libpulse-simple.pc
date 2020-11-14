@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libpulse-simple
+Description: PulseAudio Simplified Synchronous Client Interface
+Version: 13.99.3
+Libs: -L${libdir} -lpulse-simple -pthread
+Cflags: -I${includedir} -D_REENTRANT
+Requires: libpulse
